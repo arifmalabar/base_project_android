@@ -14,12 +14,6 @@ import com.decodeil.inputapp.R;
 
 public abstract class BaseActvity extends AppCompatActivity {
     abstract public void initComponents();
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        initComponents();
-    }
 
     public ArrayAdapter<String> spinnerAdapter(String[] data)
     {
