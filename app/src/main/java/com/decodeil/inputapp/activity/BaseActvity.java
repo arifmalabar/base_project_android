@@ -21,6 +21,10 @@ public abstract class BaseActvity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         return adapter;
     }
+    public ArrayAdapter<String> autoCompleteAdapter(String[] data){
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
+        return adapter;
+    }
     public ArrayAdapter<String> spinnerAdapter(String[] data, int layout)
     {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, layout, data);
